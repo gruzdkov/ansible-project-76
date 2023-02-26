@@ -1,0 +1,10 @@
+- hosts: all
+  remote_user: root
+
+  vars:
+    pip_install_packages:
+      - name: docker
+
+  roles:
+    - role: geerlingguy.pip
+
